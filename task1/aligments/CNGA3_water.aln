@@ -1,0 +1,95 @@
+########################################
+# Program: water
+# Rundate: Sun  5 Apr 2026 11:23:56
+# Commandline: water
+#    -auto
+#    -stdout
+#    -asequence emboss_water-I20260405-112354-0233-25862878-p2m.asequence
+#    -bsequence emboss_water-I20260405-112354-0233-25862878-p2m.bsequence
+#    -datafile EBLOSUM62
+#    -gapopen 10.0
+#    -gapextend 0.5
+#    -aformat3 pair
+#    -sprotein1
+#    -sprotein2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: NP_001289.1
+# 2: NP_034048.1
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 692
+# Identity:     526/692 (76.0%)
+# Similarity:   573/692 (82.8%)
+# Gaps:          63/692 ( 9.1%)
+# Score: 2687.5
+# 
+#
+#=======================================
+
+NP_001289.1        1 MAKINTQYSHPSRTHLKVKTSDRDLNRAENGLSRAHSSSEETSSVLQPGI     50
+                     |||:|||.|.||.|.|.:|.:||||:..||||                  
+NP_034048.1        1 MAKVNTQCSQPSPTQLSIKNADRDLDHVENGL------------------     32
+
+NP_001289.1       51 AMETRGLADSGQGSFTGQGIARLSRLIFLLRRWAARHVHHQDQGPDSFPD    100
+                                         .|:||||..:|.||:||:|.:||.||||.|
+NP_034048.1       33 --------------------GRVSRLIISIRAWASRHLHDEDQTPDSFLD     62
+
+NP_001289.1      101 RFRGAELKEVSSQESNAQANVGSQEPADRGRSAWPLAKCNTNTSNNTEEE    150
+                     ||.|:||||||::|||||.|.|.|:|.|.|..                  
+NP_034048.1       63 RFHGSELKEVSTRESNAQPNPGEQKPPDGGEG------------------     94
+
+NP_001289.1      151 KKTKKKDAIVVDPSSNLYYRWLTAIALPVFYNWYLLICRACFDELQSEYL    200
+                        :|::.||||||||:||||||||||||||||.||:|||||||||||:|
+NP_034048.1       95 ---RKEEPIVVDPSSNIYYRWLTAIALPVFYNWCLLVCRACFDELQSEHL    141
+
+NP_001289.1      201 MLWLVLDYSADVLYVLDVLVRARTGFLEQGLMVSDTNRLWQHYKTTTQFK    250
+                     .||||||||||||||||:|||||||||||||||.||.|||:||..|..||
+NP_034048.1      142 TLWLVLDYSADVLYVLDMLVRARTGFLEQGLMVRDTKRLWKHYTKTLHFK    191
+
+NP_001289.1      251 LDVLSLVPTDLAYLKVGTNYPEVRFNRLLKFSRLFEFFDRTETRTNYPNM    300
+                     ||:|||:||||||||:|.||||:||||||||||||||||||||||||||:
+NP_034048.1      192 LDILSLIPTDLAYLKLGVNYPELRFNRLLKFSRLFEFFDRTETRTNYPNV    241
+
+NP_001289.1      301 FRIGNLVLYILIIIHWNACIYFAISKFIGFGTDSWVYPNISIPEHGRLSR    350
+                     |||||||||.|||||||||||||||||||||||||||||.|.||:.||||
+NP_034048.1      242 FRIGNLVLYTLIIIHWNACIYFAISKFIGFGTDSWVYPNTSKPEYARLSR    291
+
+NP_001289.1      351 KYIYSLYWSTLTLTTIGETPPPVKDEEYLFVVVDFLVGVLIFATIVGNVG    400
+                     ||||||||||||||||||||||||||||||||:|||||:|||||||||||
+NP_034048.1      292 KYIYSLYWSTLTLTTIGETPPPVKDEEYLFVVIDFLVGILIFATIVGNVG    341
+
+NP_001289.1      401 SMISNMNASRAEFQAKIDSIKQYMQFRKVTKDLETRVIRWFDYLWANKKT    450
+                     ||||||||.|.||||||||:|||||||||||||||||||||||||||:||
+NP_034048.1      342 SMISNMNAPRVEFQAKIDSVKQYMQFRKVTKDLETRVIRWFDYLWANRKT    391
+
+NP_001289.1      451 VDEKEVLKSLPDKLKAEIAINVHLDTLKKVRIFQDCEAGLLVELVLKLRP    500
+                     ||||||||:|||||||||||||||||||||||||||||||||||||||||
+NP_034048.1      392 VDEKEVLKNLPDKLKAEIAINVHLDTLKKVRIFQDCEAGLLVELVLKLRP    441
+
+NP_001289.1      501 TVFSPGDYICKKGDIGKEMYIINEGKLAVVADDGVTQFVVLSDGSYFGEI    550
+                     ||||||||||||||||:|||||.|||||||||||||||||||||||||||
+NP_034048.1      442 TVFSPGDYICKKGDIGREMYIIKEGKLAVVADDGVTQFVVLSDGSYFGEI    491
+
+NP_001289.1      551 SILNIKGSKSGNRRTANIRSIGYSDLFCLSKDDLMEALTEYPEAKKALEE    600
+                     ||||||||||||||||||||||||||||||||||||||||||:||:||||
+NP_034048.1      492 SILNIKGSKSGNRRTANIRSIGYSDLFCLSKDDLMEALTEYPDAKRALEE    541
+
+NP_001289.1      601 KGRQILMKDNLIDEELARAGADPKDLEEKVEQLGSSLDTLQTRFARLLAE    650
+                     ||||||||||||||:|..|..|.:|:|||||.|.||||.|||||||||||
+NP_034048.1      542 KGRQILMKDNLIDEDLVAARVDTRDVEEKVEYLESSLDILQTRFARLLAE    591
+
+NP_001289.1      651 YNATQMKMKQRLSQLESQV--KGGGDKPLADGEVPGDATKTE    690
+                     |:|:|||:||||::||||:  :..|..|  |.|...||:||:
+NP_034048.1      592 YSASQMKLKQRLTRLESQMNRRCCGFSP--DRENSEDASKTD    631
+
+
+#---------------------------------------
+#---------------------------------------

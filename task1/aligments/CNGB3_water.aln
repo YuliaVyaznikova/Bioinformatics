@@ -1,0 +1,99 @@
+########################################
+# Program: water
+# Rundate: Sun  5 Apr 2026 11:26:10
+# Commandline: water
+#    -auto
+#    -stdout
+#    -asequence emboss_water-I20260405-112607-0605-15813166-p1m.asequence
+#    -bsequence emboss_water-I20260405-112607-0605-15813166-p1m.bsequence
+#    -datafile EBLOSUM62
+#    -gapopen 10.0
+#    -gapextend 0.5
+#    -aformat3 pair
+#    -sprotein1
+#    -sprotein2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: NP_061971.3
+# 2: NP_038955.1
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 706
+# Identity:     484/706 (68.6%)
+# Similarity:   576/706 (81.6%)
+# Gaps:          16/706 ( 2.3%)
+# Score: 2505.5
+# 
+#
+#=======================================
+
+NP_061971.3        1 MFKSLT-KVNKVKPIGENNENEQSSRRNEEGSHP--SNQSQQTTAQEENK     47
+                     |.|||| |.|||.|:         ..|.|:...|  |:.||.|.||.:|:
+NP_038955.1        1 MLKSLTVKFNKVNPM---------EGRMEKKLCPNLSSLSQPTIAQGDNQ     41
+
+NP_061971.3       48 GEEKSLKTKSTPVTSEEPHTNIQDKLSKKNSSGDLTTNPDPQNAAEPTGT     97
+                     .|::.|::: ||:|.|:.|:. :|..:.:||..|.|.||||:..||.|.|
+NP_038955.1       42 SEKEPLRSR-TPITFEKSHSK-EDNSTGENSLRDFTPNPDPECRAELTRT     89
+
+NP_061971.3       98 VPEQKEMDPGKEGPNSPQNKPPAAPVINEYADAQLHNLVKRMRQRTALYK    147
+                     :.|.::...|||.|.|.:.|.....:||||.||.|||||:|||:||||||
+NP_038955.1       90 MAEMEKTRTGKERPVSFKTKVLETSIINEYTDAHLHNLVERMRERTALYK    139
+
+NP_061971.3      148 KKLVEGD-LSSPEASPQTAKPTAVPPVKESDDKPTEHYYRLLWFKVKKMP    196
+                     |.|.|.: ....|||.|||..|.:.|.:|::.|..|| .....||.:::|
+NP_038955.1      140 KTLTEEENFPEVEASSQTAMSTNISPKQENNSKLKEH-QDTFSFKPQRVP    188
+
+NP_061971.3      197 LTEYLKRIKLPNSIDSYTDRLYLLWLLLVTLAYNWNCCFIPLRLVFPYQT    246
+                     :.|:|:|:.||.||||||||:|||||||||:||||||..:|:|||||.||
+NP_038955.1      189 VKEHLRRMILPRSIDSYTDRVYLLWLLLVTIAYNWNCWLLPVRLVFPCQT    238
+
+NP_061971.3      247 ADNIHYWLIADIICDIIYLYDMLFIQPRLQFVRGGDIIVDSNELRKHYRT    296
+                     .||.:||:|.||:||||||.|:|.|||||||||||:||||||||:::||:
+NP_038955.1      239 PDNKNYWIITDIVCDIIYLCDILLIQPRLQFVRGGEIIVDSNELKRNYRS    288
+
+NP_061971.3      297 STKFQLDVASIIPFDICYLFFGFNPMFRANRMLKYTSFFEFNHHLESIMD    346
+                     ||||::||||::||::.|:|||.||:|||||:||||||||||||||||||
+NP_038955.1      289 STKFRMDVASLLPFEVLYIFFGVNPIFRANRILKYTSFFEFNHHLESIMD    338
+
+NP_061971.3      347 KAYIYRVIRTTGYLLFILHINACVYYWASNYEGIGTTRWVYDGEGNEYLR    396
+                     |||:||||||||||||:||||||||||||:|||||:|:|||:||||:|||
+NP_038955.1      339 KAYVYRVIRTTGYLLFLLHINACVYYWASDYEGIGSTKWVYNGEGNKYLR    388
+
+NP_061971.3      397 CYYWAVRTLITIGGLPEPQTLFEIVFQLLNFFSGVFVFSSLIGQMRDVIG    446
+                     |:||||||||||||||||||.||||||.||||||||||||||||||||||
+NP_038955.1      389 CFYWAVRTLITIGGLPEPQTSFEIVFQFLNFFSGVFVFSSLIGQMRDVIG    438
+
+NP_061971.3      447 AATANQNYFRACMDDTIAYMNNYSIPKLVQKRVRTWYEYTWDSQRMLDES    496
+                     |||||||||:||||..|||||.||||:.||.|||||.||||:|||:||||
+NP_038955.1      439 AATANQNYFQACMDHIIAYMNKYSIPQSVQYRVRTWLEYTWNSQRILDES    488
+
+NP_061971.3      497 DLLKTLPTTVQLALAIDVNFSIISKVDLFKGCDTQMIYDMLLRLKSVLYL    546
+                     :||:.|||.:||::|:|:|||||.||:||||||||||||:||||||.:||
+NP_038955.1      489 NLLENLPTAMQLSIALDINFSIIDKVELFKGCDTQMIYDLLLRLKSTIYL    538
+
+NP_061971.3      547 PGDFVCKKGEIGKEMYIIKHGEVQVLGGPDGTKVLVTLKAGSVFGEISLL    596
+                     |||||||||||||||||||||||||||||||.:|||||||||||||||||
+NP_038955.1      539 PGDFVCKKGEIGKEMYIIKHGEVQVLGGPDGAQVLVTLKAGSVFGEISLL    588
+
+NP_061971.3      597 AAGGGNRRTANVVAHGFANLLTLDKKTLQEILVHYPDSERILMKKARVLL    646
+                     |.||||||||:|||||||||||||||||||||:|||.|:::|||||::||
+NP_038955.1      589 AKGGGNRRTADVVAHGFANLLTLDKKTLQEILLHYPTSKKLLMKKAKILL    638
+
+NP_061971.3      647 KQKAKTAEATPPRKDLALLFPPKEETPKLFKTLLGGTGKASLARLLKLKR    696
+                     .||.||.:|.|.|...|.|||||||||::.|.|||.|||..|.||||.||
+NP_038955.1      639 SQKGKTTQAIPARPGPAFLFPPKEETPRMLKVLLGNTGKVDLGRLLKGKR    688
+
+NP_061971.3      697 EQAAQK    702
+                     :...||
+NP_038955.1      689 KTTTQK    694
+
+
+#---------------------------------------
+#---------------------------------------
