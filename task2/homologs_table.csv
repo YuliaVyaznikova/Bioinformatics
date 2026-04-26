@@ -1,0 +1,12 @@
+Gene symbol,Accession,Species (latin),Species (russian),Class
+CNGA3,NM_001298,Homo sapiens,Человек разумный,Млекопитающие
+CNGA3,NM_001420074,Mus musculus,Домовая мышь,Млекопитающие
+CNGA3,NM_001301112,Canis lupus familiaris,Собака домашняя,Млекопитающие
+CNGA3,NM_001396963,Gallus gallus,Банкивская джунглевая курица,Птицы
+CNGA3,XM_065075455,Columba livia,Сизый голубь,Птицы
+CNGA3,XM_006272092,Alligator mississippiensis,Миссисипский аллигатор,Рептилии
+CNGA3,XM_062975370,Anolis carolinensis,Зелёный анолис,Рептилии
+cnga3,XM_031897022,Xenopus tropicalis,Тропическая шпорцевая лягушка,Земноводные
+cnga3a,XM_009302572,Danio rerio,Данио-рерио,Лучеперые рыбы
+cnga3a,XM_078946653,Oryzias latipes,Японская медака,Лучеперые рыбы
+cnga3a,XM_030372034,Gadus morhua,Атлантическая треска,Лучеперые рыбы
