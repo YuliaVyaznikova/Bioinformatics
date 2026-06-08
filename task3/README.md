@@ -132,9 +132,56 @@ python3 standalone_pipeline.py
 
 ## 6. Визуализация
 
-- Способ: graphviz (автоматическая генерация)
-- Скрипт генерации: [`viz/generate_viz.py`](viz/generate_viz.py)
-- Изображения:
-  - [`viz/pipeline_dag.png`](viz/pipeline_dag.png) - DAG ONT пайплайна
-  - [`viz/hello_pipeline_dag.png`](viz/hello_pipeline_dag.png) - DAG hello world
-  - [`viz/algorithm_block_diagram.png`](viz/algorithm_block_diagram.png) - блок-схема алгоритма
+### 6.1. Автоматическая визуализация средствами ClearML
+
+Пайплайн зарегистрирован на локальном ClearML сервере (Docker, clearml-server). ClearML автоматически строит DAG (Directed Acyclic Graph) для каждого запущенного pipeline:
+
+- **DAG пайплайна**: доступен в веб-интерфейсе ClearML на странице Pipeline (http://127.0.0.1:8080/pipelines/...)
+- Граф показывает последовательность шагов, их статус (успех/ошибка) и время выполнения
+- DAG строится автоматически фреймворком на основе декораторов `@PipelineDecorator.component` и `@PipelineDecorator.pipeline`
+
+### 6.2. Graphviz-визуализация
+
+Дополнительно сгенерированы схематические изображения через graphviz (скрипт [`viz/generate_viz.py`](viz/generate_viz.py)):
+
+- [`viz/pipeline_dag.png`](viz/pipeline_dag.png) - DAG пайплайна (схематический)
+- [`viz/hello_pipeline_dag.png`](viz/hello_pipeline_dag.png) - DAG hello world (схематический)
+- [`viz/algorithm_block_diagram.png`](viz/algorithm_block_diagram.png) - блок-схема алгоритма
+
+### 6.3. Отличия DAG от блок-схемы алгоритма
+
+| Характеристика | DAG (ClearML) | Блок-схема алгоритма |
+|---|---|---|
+| Направление | Граф с порядком выполнения (стрелки от входа к выходу) | Линейная последовательность сверху-вниз с ветвлениями |
+| Условные переходы | Ветвление по результату flagstat (OK/NOT OK) реализуется в коде pipeline | Явный ромб (decision) на блок-схеме |
+| Параллелизм | ClearML может запускать независимые шаги параллельно | Строго последовательное выполнение |
+| Контроль данных | Шаги обмениваются файлами через файловую систему | Данные передаются по стрелкам между блоками |
+| Детализация | Каждый шаг - отдельный компонент с логированием | Шаги агрегированы в функциональные блоки |
+| Инструмент | Автоматическая генерация фреймворком | Ручное построение |
+
+Основное различие: DAG отражает реальный порядок выполнения с зависимостями по данным, а блок-схема показывает логику алгоритма (включая ветвление по условию >= 90%).
+
+---
+
+## Файлы
+
+| Файл | Описание |
+|---|---|
+| `mapping_quality.sh` | bash-скрипт оценки качества картирования |
+| `parse_flagstat.py` | парсинг samtools flagstat |
+| `hello_pipeline.py` | тестовый clearml пайплайн |
+| `clearml_pipeline.py` | основной clearml пайплайн |
+| `INSTALL_CLEARML.md` | инструкция по установке ClearML |
+| `clearml.conf` | конфигурация ClearML |
+| `README.md` | данный файл |
+| `NC_000913.3.fasta` | референсный геном E. coli K-12 MG1655 |
+| `stats.txt` | flagstat + результат оценки (mapping_quality.sh) |
+| `mapping_stats.txt` | flagstat + результат оценки (standalone_pipeline.py) |
+| `viz/generate_viz.py` | генерация dag и блок-схем через graphviz |
+| `viz/pipeline_dag.png` | dag пайплайна clearml |
+| `viz/hello_pipeline_dag.png` | dag hello world |
+| `viz/algorithm_block_diagram.png` | блок-схема алгоритма |
+| `standalone_pipeline.py` | пайплайн без clearml для локального запуска |
+| `pipeline_log.txt` | лог-файл выполнения пайплайна на clearml сервере |
+
+Большие файлы (`ecoli_ont.fastq`, `alignment.sam`, `alignment.bam`, `NC_000913.3.fasta.mmi`, `task3_data.tar.gz`) не отслеживаются в git. Архив доступен на [Google Drive](https://drive.google.com/drive/folders/12oKdipaKr7Gs0oKhT9CO-wueR9HQw0ey?usp=sharing).

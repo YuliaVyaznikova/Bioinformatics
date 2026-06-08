@@ -1,0 +1,19 @@
+ClearML pipeline execution log
+==============================
+Pipeline: ont mapping quality assessment pipeline
+Project: Bioinformatics Task 3
+Server: http://127.0.0.1:8080 (local clearml-server via Docker)
+
+Steps:
+1. check_dependencies - all tools found (samtools, minimap2, fastqc, freebayes)
+2. fastqc_check - WARN (timed out on ONT long reads with --nogroup flag)
+3. index_reference - OK (mmi index 16219876 bytes)
+4. alignment - OK (minimap2 -ax map-ont, SAM 505605143 bytes)
+5. sam_to_bam - OK (BAM 192905319 bytes)
+6. flagstat - mapped: 86.77%
+
+Decision: NOT OK (86.77% < 90%)
+Variant calling skipped (threshold not met)
+
+Pipeline finished successfully on local ClearML server.
+Pipeline page: http://127.0.0.1:8080/pipelines/0b81e3ce1dd045b986c451bf31085d24/experiments/58a71fe15b714246823138a3992bd308

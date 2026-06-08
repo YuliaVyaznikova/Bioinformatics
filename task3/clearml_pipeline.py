@@ -30,7 +30,7 @@ def check_dependencies():
     Logger.current_logger().report_text("all dependencies found.")
 
 
-@PipelineDecorator.component(return_values=['qc_status'], cache=True)
+@PipelineDecorator.component(return_values=['qc_status'])
 def fastqc_check(fastq_path, output_dir):
     try:
         fastq_path = os.path.abspath(fastq_path)
@@ -63,7 +63,7 @@ def fastqc_check(fastq_path, output_dir):
         return "FAIL"
 
 
-@PipelineDecorator.component(cache=True)
+@PipelineDecorator.component(return_values=['mmi_path'])
 def index_reference(fasta_path):
     try:
         fasta_path = os.path.abspath(fasta_path)
@@ -80,6 +80,7 @@ def index_reference(fasta_path):
             )
         else:
             raise FileNotFoundError(f"index not created: {mmi_path}")
+        return mmi_path
     except Exception as e:
         err_msg = f"indexing failed: {str(e)}"
         if result.stderr:
@@ -88,13 +89,13 @@ def index_reference(fasta_path):
         raise
 
 
-@PipelineDecorator.component(cache=True)
-def alignment(fasta_path, fastq_path, sam_output):
+@PipelineDecorator.component(return_values=['sam_path'])
+def alignment(fasta_path, fastq_path, mmi_path, sam_output):
     try:
         fasta_path = os.path.abspath(fasta_path)
         fastq_path = os.path.abspath(fastq_path)
+        mmi_path = os.path.abspath(mmi_path)
         sam_output = os.path.abspath(sam_output)
-        mmi_path = f"{fasta_path}.mmi"
         Logger.current_logger().report_text(
             f"mapping with minimap2 (ONT): {fastq_path} -> {sam_output}"
         )
@@ -108,6 +109,7 @@ def alignment(fasta_path, fastq_path, sam_output):
         Logger.current_logger().report_text(
             f"mapping done, sam: {os.path.getsize(sam_output)} bytes"
         )
+        return sam_output
     except Exception as e:
         err_msg = f"alignment failed: {str(e)}"
         if result.stderr:
@@ -116,7 +118,7 @@ def alignment(fasta_path, fastq_path, sam_output):
         raise
 
 
-@PipelineDecorator.component(cache=True)
+@PipelineDecorator.component(return_values=['bam_path'])
 def sam_to_bam(sam_path, bam_output):
     try:
         sam_path = os.path.abspath(sam_path)
@@ -132,6 +134,7 @@ def sam_to_bam(sam_path, bam_output):
         Logger.current_logger().report_text(
             f"bam created: {bam_output} ({os.path.getsize(bam_output)} bytes)"
         )
+        return bam_output
     except Exception as e:
         err_msg = f"sam to bam failed: {str(e)}"
         if result.stderr:
@@ -140,7 +143,7 @@ def sam_to_bam(sam_path, bam_output):
         raise
 
 
-@PipelineDecorator.component(return_values=['mapped_percent'], cache=True)
+@PipelineDecorator.component(return_values=['mapped_percent'])
 def flagstat(bam_path, stats_output):
     try:
         bam_path = os.path.abspath(bam_path)
@@ -171,7 +174,7 @@ def flagstat(bam_path, stats_output):
         raise
 
 
-@PipelineDecorator.component(cache=True)
+@PipelineDecorator.component()
 def sort_and_variant_calling(bam_path, fasta_path, vcf_output):
     try:
         sorted_bam = bam_path.replace('.bam', '.sorted.bam')
@@ -209,15 +212,11 @@ def genome_pipeline(fasta_path, fastq_path):
     check_dependencies()
     qc_status = fastqc_check(fastq_path, 'qc_report')
     Logger.current_logger().report_text(f"fastqc status: {qc_status}")
-    index_reference(fasta_path)
-    sam_file = 'alignment.sam'
-    alignment(fasta_path, fastq_path, sam_file)
-    bam_file = 'alignment.bam'
-    sam_to_bam(sam_file, bam_file)
+    mmi_path = index_reference(fasta_path)
+    sam_path = alignment(fasta_path, fastq_path, mmi_path, 'alignment.sam')
+    bam_path = sam_to_bam(sam_path, 'alignment.bam')
     stats_file = 'mapping_stats.txt'
-    mapped_percent = flagstat(bam_file, stats_file)
-
-    mapped_percent = float(mapped_percent)
+    mapped_percent = flagstat(bam_path, stats_file)
 
     if mapped_percent >= 90.0:
         Logger.current_logger().report_text(
@@ -225,7 +224,7 @@ def genome_pipeline(fasta_path, fastq_path):
         )
         with open(stats_file, 'a') as f:
             f.write("OK\n")
-        sort_and_variant_calling(bam_file, fasta_path, 'variants.vcf')
+        sort_and_variant_calling(bam_path, fasta_path, 'variants.vcf')
     else:
         Logger.current_logger().report_text(
             f"mapping low: {mapped_percent}% < 90% -> NOT OK",
