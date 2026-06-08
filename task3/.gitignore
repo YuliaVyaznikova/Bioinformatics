@@ -1,0 +1,6 @@
+clearml.conf
+*.fastq
+*.sam
+*.bam
+*.mmi
+task3_data.tar.gz
