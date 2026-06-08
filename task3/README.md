@@ -1,6 +1,7 @@
 # Оценка качества картирования ONT-прочтений E. coli
 
 Вариант: Oxford Nanopore (ONT) + minimap2 + ClearML Pipelines
+
 Организм: *Escherichia coli* K-12 MG1655
 
 ## 1. Данные из NCBI SRA
@@ -102,7 +103,7 @@ python3 parse_flagstat.py stats.txt
 python3 hello_pipeline.py
 ```
 
-### 5.3. Пайплайн оценки качества (clearml)
+### 5.3. Пайплайн оценки качества (ClearML)
 
 Файл: [`clearml_pipeline.py`](clearml_pipeline.py)
 
@@ -117,7 +118,7 @@ python3 hello_pipeline.py
 
 Условная ветка: если `mapped_percent >= 90.0` => sort_and_variant_calling, иначе NOT OK.
 
-### 5.4. standalone пайплайн (без clearml)
+### 5.4. standalone пайплайн (без ClearML)
 
 Файл: [`standalone_pipeline.py`](standalone_pipeline.py)
 
@@ -129,35 +130,11 @@ python3 standalone_pipeline.py
 
 ---
 
-## 6. визуализация
+## 6. Визуализация
 
 - Способ: graphviz (автоматическая генерация)
 - Скрипт генерации: [`viz/generate_viz.py`](viz/generate_viz.py)
 - Изображения:
-  - [`viz/pipeline_dag.png`](viz/pipeline_dag.png) - dag онт пайплайна
-  - [`viz/hello_pipeline_dag.png`](viz/hello_pipeline_dag.png) - dag hello world
+  - [`viz/pipeline_dag.png`](viz/pipeline_dag.png) - DAG ONT пайплайна
+  - [`viz/hello_pipeline_dag.png`](viz/hello_pipeline_dag.png) - DAG hello world
   - [`viz/algorithm_block_diagram.png`](viz/algorithm_block_diagram.png) - блок-схема алгоритма
-
----
-
-## Файлы
-
-| Файл | Описание |
-|---|---|
-| `mapping_quality.sh` | bash-ск��ипт оценки качества картирования |
-| `parse_flagstat.py` | парсинг samtools flagstat |
-| `hello_pipeline.py` | тестовый clearml пайплайн |
-| `clearml_pipeline.py` | основной clearml пайплайн |
-| `INSTALL_CLEARML.md` | инструкция по установке ClearML |
-| `clearml.conf` | конфигурация ClearML |
-| `README.md` | данный файл |
-| `NC_000913.3.fasta` | референсный геном E. coli K-12 MG1655 |
-| `stats.txt` | flagstat + результат оценки (mapping_quality.sh) |
-| `mapping_stats.txt` | flagstat + результат оценки (standalone_pipeline.py) |
-| `viz/generate_viz.py` | генерация dag и блок-схем через graphviz |
-| `viz/pipeline_dag.png` | dag пайплайна clearml |
-| `viz/hello_pipeline_dag.png` | dag hello world |
-| `viz/algorithm_block_diagram.png` | блок-схема алгоритма |
-| `standalone_pipeline.py` | пайплайн без clearml для локального запуска |
-
-Большие файлы (`ecoli_ont.fastq`, `alignment.sam`, `alignment.bam`, `NC_000913.3.fasta.mmi`, `task3_data.tar.gz`) не отслеживаются в git. Архив доступен на [Google Drive](https://drive.google.com/drive/folders/12oKdipaKr7Gs0oKhT9CO-wueR9HQw0ey?usp=sharing).
