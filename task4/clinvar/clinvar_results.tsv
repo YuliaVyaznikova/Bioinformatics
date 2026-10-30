@@ -1,0 +1,51 @@
+id	chrom	pos	ref	alt	in_clinvar	variation_id	accession	title	classification	review_status	last_evaluated	conditions	molecular_consequence	other_records_at_position
+rs7278168	21	25603910	C	T	no	-	-	-	-	-	-	-	-	-
+rs75377686	21	25606478	T	C	no	-	-	-	-	-	-	-	-	-
+rs9808753	21	33415005	A	G	yes	1169473	VCV001169473.16	NM_005534.4(IFNGR2):c.191A>G (p.Gln64Arg)	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	2026/02/04	not specified; Immunodeficiency 28; not provided	missense variant	-
+rs17878711	21	33427015	A	G	yes	445594	VCV000445594.14	NM_005534.4(IFNGR2):c.544A>G (p.Lys182Glu)	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	2026/02/01	Immunodeficiency 28; not provided	missense variant	-
+rs73901831	21	37065660	T	G	yes	709520	VCV000709520.10	NM_153682.3(PIGP):c.327A>C (p.Pro109=)	Benign	criteria provided, single submitter	2026/02/02	not provided	synonymous variant	-
+rs457705	21	38819507	T	G	no	-	-	-	-	-	-	-	-	-
+rs61737061	21	43094699	G	A	no	-	-	-	-	-	-	-	-	-
+rs115397760	21	43968034	C	T	no	-	-	-	-	-	-	-	-	-
+rs115875072	21	43969246	G	A	no	-	-	-	-	-	-	-	-	-
+rs7289170	22	17181903	A	G	yes	402527	VCV000402527.23	NM_001282225.2(ADA2):c.1359T>C (p.Tyr453=)	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	2026/02/04	Deficiency of adenosine deaminase 2; not specified; not provided	synonymous variant	VCV003603868 NM_001282225.2(ADA2):c.1358_1359delinsGC (p.Tyr453Cys): Likely pathogenic
+rs2231495	22	17188416	T	C	yes	1168873	VCV001168873.18	NM_001282225.2(ADA2):c.1004A>G (p.His335Arg)	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	2026/02/04	Deficiency of adenosine deaminase 2; not specified; not provided	missense variant	VCV002904982 NM_001282225.2(ADA2):c.1004A>C (p.His335Pro): Uncertain significance | VCV000591150 NM_001282225.2(ADA2):c.1003_1004inv (p.His335Cys): Uncertain significance
+rs115877869	22	19378003	G	C	no	-	-	-	-	-	-	-	-	-
+rs115157927	22	19385577	A	T	yes	3525634	VCV003525634.1	NM_003325.4(HIRA):c.1273T>A (p.Ser425Thr)	Uncertain significance	criteria provided, single submitter	2024/10/08	not specified	missense variant	-
+rs9618556	22	19396832	C	T	yes	710905	VCV000710905.30	NM_003325.4(HIRA):c.609G>A (p.Thr203=)	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	2024/11/21	not specified; not provided	synonymous variant	-
+rs116458396	22	19396916	G	A	no	-	-	-	-	-	-	-	-	-
+rs115736959	22	19973143	G	A	yes	789863	VCV000789863.3	NM_001670.3(ARVCF):c.2414C>T (p.Ala805Val)	Benign	criteria provided, single submitter	2018/07/04	not provided	missense variant	-
+rs76496156	22	19979039	C	T	yes	712281	VCV000712281.4	NM_001670.3(ARVCF):c.1438G>A (p.Val480Ile)	Benign	criteria provided, multiple submitters, no conflicts	2018/03/30	not provided	missense variant	-
+rs1058399	22	19980020	G	A	yes	1290187	VCV001290187.3	NM_001670.3(ARVCF):c.1119C>T (p.Pro373=)	Benign	criteria provided, multiple submitters, no conflicts	2021/05/05	not provided	synonymous variant	-
+rs116398106	22	19981410	G	A	no	-	-	-	-	-	-	-	-	-
+rs2073747	22	19981552	A	G	no	-	-	-	-	-	-	-	-	VCV004456057 NM_001670.3(ARVCF):c.555T>G (p.Ser185Arg): no classification
+rs33992092	22	19981972	G	T	yes	777061	VCV000777061.6	NM_001670.3(ARVCF):c.330C>A (p.Val110=)	Benign	criteria provided, multiple submitters, no conflicts	2021/05/04	not provided	synonymous variant	-
+rs115706909	22	21643926	C	T	no	-	-	-	-	-	-	-	-	-
+rs116048331	22	21970233	C	T	yes	3043387	VCV003043387.2	NM_001282112.2(TOP3B):c.558G>A (p.Leu186=)	Likely benign	no assertion criteria provided	2019/07/01	TOP3B-related disorder	synonymous variant, non-coding transcript variant	-
+rs61747143	22	23146672	C	T	no	-	-	-	-	-	-	-	-	-
+rs114023206	22	23152491	C	T	no	-	-	-	-	-	-	-	-	-
+rs5759612	22	23160983	A	G	no	-	-	-	-	-	-	-	-	-
+rs115180746	22	24184189	C	G	no	-	-	-	-	-	-	-	-	-
+rs8141797	22	24186073	A	G	yes	1255298	VCV001255298.3	NM_019601.4(SUSD2):c.1397A>G (p.Asn466Ser)	Benign	criteria provided, multiple submitters, no conflicts	2020/11/02	not provided	missense variant	-
+rs114572804	22	24187599	C	T	no	-	-	-	-	-	-	-	-	-
+rs116796967	22	30263994	C	T	no	-	-	-	-	-	-	-	-	-
+rs2240345	22	30461386	A	C	no	-	-	-	-	-	-	-	-	-
+rs4820853	22	30468623	A	G	no	-	-	-	-	-	-	-	-	-
+rs115083767	22	30470253	G	A	no	-	-	-	-	-	-	-	-	-
+rs115862749	22	30555417	G	A	no	-	-	-	-	-	-	-	-	-
+rs114565111	22	30555495	G	C	yes	4261361	VCV004261361.1	NM_001318104.2(GAL3ST1):c.730C>G (p.Arg244Gly)	Uncertain significance	criteria provided, single submitter	2025/08/23	not specified	missense variant	-
+rs11913728	22	31091696	C	T	no	-	-	-	-	-	-	-	-	-
+rs116593437	22	31091747	G	A	yes	721065	VCV000721065.4	NM_134269.3(SMTN):c.1532G>A (p.Arg511His)	Benign	criteria provided, single submitter	2019/12/31	not provided	missense variant, non-coding transcript variant	-
+rs5997927	22	31262170	C	T	no	-	-	-	-	-	-	-	-	-
+rs114246562	22	33274442	G	A	yes	703381	VCV000703381.17	NM_133642.5(LARGE1):c.2256C>T (p.Ala752=)	Likely benign	criteria provided, multiple submitters, no conflicts	2025/07/11	not provided; Muscular dystrophy-dystroglycanopathy type B6	synonymous variant	VCV001430579 NM_133642.5(LARGE1):c.2256C>A (p.Ala752=): Likely benign
+rs63446460	22	33650610	C	G	yes	158805	VCV000158805.23	NM_133642.5(LARGE1):c.165G>C (p.Thr55=)	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	2026/02/04	not specified; not provided; Muscular dystrophy-dystroglycanopathy type B6; Muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A6	synonymous variant	VCV003703120 NM_133642.5(LARGE1):c.165G>A (p.Thr55=): Likely benign
+rs6001200	22	38699844	G	C	no	-	-	-	-	-	-	-	-	-
+rs114180421	22	38699942	A	G	no	-	-	-	-	-	-	-	-	-
+rs17565	22	39231816	T	C	yes	725856	VCV000725856.33	NM_002608.4(PDGFB):c.262A>G (p.Ile88Val)	Benign/Likely benign	criteria provided, multiple submitters, no conflicts	2026/01/15	not provided; PDGFB-related disorder	missense variant	-
+rs112945971	22	39744158	G	A	no	-	-	-	-	-	-	-	-	-
+rs114100360	22	39835936	C	A	no	-	-	-	-	-	-	-	-	-
+rs8139570	22	39887557	A	G	no	-	-	-	-	-	-	-	-	-
+rs115837035	22	40021368	G	A	no	-	-	-	-	-	-	-	-	-
+rs5995794	22	40021816	A	G	no	-	-	-	-	-	-	-	-	-
+rs114043304	22	44920488	A	G	no	-	-	-	-	-	-	-	-	-
+rs35195493	22	50177576	C	G	no	-	-	-	-	-	-	-	-	-
