@@ -1,0 +1,22 @@
+{
+  "context": {
+    "mode": "pairwise",
+    "method": {
+      "name": "fatcat-flexible"
+    },
+    "structures": [
+      {
+        "format": "pdb",
+        "selection": {
+          "asym_id": "A"
+        }
+      },
+      {
+        "format": "pdb",
+        "selection": {
+          "asym_id": "A"
+        }
+      }
+    ]
+  }
+}

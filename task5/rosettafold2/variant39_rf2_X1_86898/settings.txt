@@ -1,0 +1,12 @@
+method=RoseTTAFold2
+params=RF2_apr23
+sequence=MENEDGYMTLSFKNRCKSKQKSKDFSLYPQYYCLLLIFGCIVILIFIMTGIDLKFWHKKMDFSQNVNVSSLSGHNYLCPNDWLLNEGKCYWFSTSFKTWK
+sym=X
+order=1
+msa_concat_mode=diag
+collapse_identical=Falserandom_seed=0
+msa_method=mmseqs2
+num_recycles=6
+use_mlm=False
+use_dropout=False
+num_models=1

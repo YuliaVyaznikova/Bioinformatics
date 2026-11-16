@@ -1,0 +1,363 @@
+{
+ "info": {
+  "uuid": "45354ac4-e55b-4d80-b408-dcc5bef411fb",
+  "status": "COMPLETE"
+ },
+ "meta": {
+  "alignment_mode": "pairwise",
+  "alignment_method": "fatcat-flexible"
+ },
+ "results": [
+  {
+   "structures": [
+    {
+     "url": "https://user-upload.rcsb.org/v1/download/fb23768b-5ce2-47d5-b21c-b1e3082dd253/esmfold.bcif",
+     "format": "mmcif",
+     "is_binary": true,
+     "name": "esmfold.pdb",
+     "selection": {
+      "asym_id": "A"
+     }
+    },
+    {
+     "url": "https://user-upload.rcsb.org/v1/download/990918b9-9796-45be-a925-41cca0cf1690/rosettafold2.bcif",
+     "format": "mmcif",
+     "is_binary": true,
+     "name": "rosettafold2.pdb",
+     "selection": {
+      "asym_id": "A"
+     }
+    }
+   ],
+   "structure_alignment": [
+    {
+     "regions": [
+      [
+       {
+        "asym_id": "A",
+        "beg_seq_id": 6,
+        "beg_index": 0,
+        "length": 13
+       },
+       {
+        "asym_id": "A",
+        "beg_seq_id": 20,
+        "beg_index": 14,
+        "length": 5
+       }
+      ],
+      [
+       {
+        "asym_id": "A",
+        "beg_seq_id": 5,
+        "beg_index": 0,
+        "length": 18
+       }
+      ]
+     ],
+     "transformations": [
+      [
+       1.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       1.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       1.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.5279490544904946,
+       0.5314924010343771,
+       -0.6624089548800693,
+       0.0,
+       -0.4622396460459169,
+       -0.4744928593713836,
+       -0.749126849090936,
+       0.0,
+       -0.7124635467769129,
+       0.701692492512412,
+       -0.004831197137388209,
+       0.0,
+       33.12695125579721,
+       52.093994838899434,
+       37.97969807679418,
+       1.0
+      ]
+     ],
+     "summary": {
+      "scores": [
+       {
+        "value": 2.67,
+        "type": "RMSD"
+       },
+       {
+        "value": 37.08,
+        "type": "similarity-score"
+       }
+      ],
+      "n_aln_residue_pairs": 18
+     }
+    },
+    {
+     "regions": [
+      [
+       {
+        "asym_id": "A",
+        "beg_seq_id": 30,
+        "beg_index": 24,
+        "length": 4
+       },
+       {
+        "asym_id": "A",
+        "beg_seq_id": 38,
+        "beg_index": 32,
+        "length": 27
+       }
+      ],
+      [
+       {
+        "asym_id": "A",
+        "beg_seq_id": 26,
+        "beg_index": 24,
+        "length": 31
+       }
+      ]
+     ],
+     "transformations": [
+      [
+       1.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       1.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       1.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.3489477909869457,
+       -0.3573153942105294,
+       -0.866349322286054,
+       0.0,
+       0.8742046396359676,
+       -0.2089595317660689,
+       0.4382946065411415,
+       0.0,
+       -0.3376413588473415,
+       -0.9103085318419685,
+       0.23945080841676306,
+       0.0,
+       -22.709518034301674,
+       -3.3083706921921077,
+       3.94326206025643,
+       1.0
+      ]
+     ],
+     "summary": {
+      "scores": [
+       {
+        "value": 67.89,
+        "type": "similarity-score"
+       },
+       {
+        "value": 2.99,
+        "type": "RMSD"
+       }
+      ],
+      "n_aln_residue_pairs": 31
+     }
+    },
+    {
+     "regions": [
+      [
+       {
+        "asym_id": "A",
+        "beg_seq_id": 73,
+        "beg_index": 75,
+        "length": 28
+       }
+      ],
+      [
+       {
+        "asym_id": "A",
+        "beg_seq_id": 73,
+        "beg_index": 75,
+        "length": 28
+       }
+      ]
+     ],
+     "transformations": [
+      [
+       1.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       1.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       1.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       -0.5027207738895493,
+       -0.658539316530377,
+       0.559998028642599,
+       0.0,
+       0.33702609535492944,
+       -0.7458585960413376,
+       -0.5745505772001762,
+       0.0,
+       0.796043487850823,
+       -0.10010456180888687,
+       0.5969035451020108,
+       0.0,
+       -16.698604228397677,
+       -23.988806341967493,
+       -34.081759499693575,
+       1.0
+      ]
+     ],
+     "summary": {
+      "scores": [
+       {
+        "value": 68.36,
+        "type": "similarity-score"
+       },
+       {
+        "value": 1.27,
+        "type": "RMSD"
+       }
+      ],
+      "n_aln_residue_pairs": 28
+     }
+    }
+   ],
+   "sequence_alignment": [
+    {
+     "sequence": "MENEDGYMTLSFKNRCKSKQKSKDFSLYPQYYCLLLIFGCIVILIFIMTGIDLKFWHKKMDFSQNVNVSSLSGHNYLCPNDWLLNEGKCYWFSTSFKTWK",
+     "regions": [
+      {
+       "asym_id": "A",
+       "beg_seq_id": 6,
+       "beg_index": 0,
+       "length": 67
+      },
+      {
+       "asym_id": "A",
+       "beg_seq_id": 73,
+       "beg_index": 75,
+       "length": 28
+      }
+     ],
+     "gaps": [
+      {
+       "beg_index": 67,
+       "length": 8
+      }
+     ]
+    },
+    {
+     "sequence": "MENEDGYMTLSFKNRCKSKQKSKDFSLYPQYYCLLLIFGCIVILIFIMTGIDLKFWHKKMDFSQNVNVSSLSGHNYLCPNDWLLNEGKCYWFSTSFKTWK",
+     "regions": [
+      {
+       "asym_id": "A",
+       "beg_seq_id": 5,
+       "beg_index": 0,
+       "length": 13
+      },
+      {
+       "asym_id": "A",
+       "beg_seq_id": 18,
+       "beg_index": 14,
+       "length": 8
+      },
+      {
+       "asym_id": "A",
+       "beg_seq_id": 26,
+       "beg_index": 24,
+       "length": 4
+      },
+      {
+       "asym_id": "A",
+       "beg_seq_id": 30,
+       "beg_index": 32,
+       "length": 71
+      }
+     ],
+     "gaps": [
+      {
+       "beg_index": 13,
+       "length": 1
+      },
+      {
+       "beg_index": 22,
+       "length": 2
+      },
+      {
+       "beg_index": 28,
+       "length": 4
+      }
+     ]
+    }
+   ],
+   "summary": {
+    "scores": [
+     {
+      "value": 0.4,
+      "type": "sequence-identity"
+     },
+     {
+      "value": 134.78,
+      "type": "similarity-score"
+     },
+     {
+      "value": 0.04,
+      "type": "TM-score"
+     },
+     {
+      "value": 0.45,
+      "type": "sequence-similarity"
+     },
+     {
+      "value": 2.35,
+      "type": "RMSD"
+     }
+    ],
+    "n_aln_residue_pairs": 77,
+    "n_modeled_residues": [
+     100,
+     100
+    ],
+    "seq_aln_len": 103,
+    "aln_coverage": [
+     77,
+     77
+    ]
+   }
+  }
+ ]
+}

@@ -25,9 +25,9 @@ MENEDGYMTLSFKNRCKSKQKSKDFSLYPQYYCLLLIFGCIVILIFIMTGIDLKFWHKKMDFSQNVNVSSLSGHNYLCPN
 
 ESMFold использует модель `esmfold_v1` и 3 recycle. Веса модели загружаются непосредственно в вычислительной среде без обращения к ESMFold API. Для совместимости с текущим PyTorch используется сборка OpenFold с флагом C++20 без изоляции сборки. Ноутбук: [`esmfold.ipynb`](esmfold.ipynb).
 
-RoseTTAFold2 использует параметры `RF2_apr23`, MSA через MMseqs2, 6 recycles, 1 модель и random seed 0. Отдельное окружение Python 3.10, PyTorch 2.2, CUDA 12.1 и DGL 2.0 создаётся через `micromamba`. Ноутбук: [`rosettafold2.ipynb`](rosettafold2.ipynb). Код вычислений: [`rosettafold2_driver.py`](rosettafold2_driver.py).
+RoseTTAFold2 использует параметры `RF2_apr23`, MSA через MMseqs2, 6 recycles, 1 модель и random seed 0. Отдельное окружение Python 3.10, PyTorch 2.2, CUDA 12.1 и DGL 2.0 создаётся через `micromamba`. Весь код вычислений находится непосредственно в [`rosettafold2.ipynb`](rosettafold2.ipynb).
 
-Фактический запуск ESMFold с сохранёнными выводами: [`esmfold_executed.ipynb`](esmfold_executed.ipynb).
+Ноутбук содержит код, фактические выводы выполнения и визуализацию результатов.
 
 Исходные ноутбуки ColabFold: [ESMFold](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/ESMFold.ipynb) и [RoseTTAFold2](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/RoseTTAFold2.ipynb).
 
