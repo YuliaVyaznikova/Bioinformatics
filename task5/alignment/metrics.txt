@@ -1,0 +1,23 @@
+RCSB status: COMPLETE
+Method: jFATCAT-flexible
+Chains: A (ESMFold), A (RoseTTAFold2)
+Flexible blocks: 3
+Aligned residue pairs: 77
+Coverage: 77% for each structure
+Alignment length: 103 columns
+RMSD reported by RCSB: 2.35 Å
+RMSD recomputed from exported C-alpha coordinates: 2.348 Å
+Sequence identity reported by RCSB: 0.40
+Sequence similarity reported by RCSB: 0.45
+TM-score field in flexible RCSB output: 0.04
+
+ESMFold residues: 100
+ESMFold atoms: 837
+ESMFold PTM: 0.262
+ESMFold mean C-alpha pLDDT: 60.176
+ESMFold mean PAE: 21.598 Å
+
+RoseTTAFold2 residues: 100
+RoseTTAFold2 atoms: 1659
+RoseTTAFold2 mean pLDDT: 0.685059
+RoseTTAFold2 mean PAE: 23.015625 Å

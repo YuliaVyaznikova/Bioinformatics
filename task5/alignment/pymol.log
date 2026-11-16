@@ -1,0 +1,35 @@
+ CmdLoad: "" loaded as "esmfold".
+ CmdLoad: "" loaded as "rosettafold2".
+ Alter: modified 1294 atoms.
+ Executive: Colored 654 atoms.
+ Executive: Colored 1294 atoms.
+ Setting: bg_rgb set to 0xffffff.
+ Setting: ray_opaque_background set to 1.
+ Setting: ray_shadow set to off.
+ Setting: antialias set to 2.
+ Setting: cartoon_fancy_helices set to on.
+ Ray: render time: 0.34 sec. = 10483.8 frames/hour (0.34 sec. accum.).
+ ScenePNG: wrote 1800x900 pixel image to file "alignment/alignment.png".
+ Ray: render time: 0.39 sec. = 9269.2 frames/hour (0.73 sec. accum.).
+ ScenePNG: wrote 1000x1200 pixel image to file "alignment/alignment_rotated.png".
+PyMOL>load alignment/aligned_esmfold.pdb, esmfold
+PyMOL>load alignment/aligned_rosettafold2.pdb, rosettafold2
+PyMOL>alter rosettafold2, chain='B'
+PyMOL>sort
+PyMOL>hide everything
+PyMOL>show cartoon
+PyMOL>color cyan, chain A
+PyMOL>color orange, chain B
+PyMOL>set bg_rgb, [1, 1, 1]
+PyMOL>set ray_opaque_background, 1
+PyMOL>set ray_shadows, 0
+PyMOL>set antialias, 2
+PyMOL>set cartoon_fancy_helices, 1
+PyMOL>orient
+PyMOL>zoom all, 0
+PyMOL>save alignment/alignment.pse
+ Save: Please wait -- writing session file...
+ Save: wrote "alignment/alignment.pse".
+PyMOL>png alignment/alignment.png, width=1800, height=900, dpi=300, ray=1
+PyMOL>rotate y, 90
+PyMOL>png alignment/alignment_rotated.png, width=1000, height=1200, dpi=300, ray=1
